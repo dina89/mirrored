@@ -1,7 +1,7 @@
 #!/bin/bash
 #add fix to exercise5-server2 here
 #!/bin/bash
-echo "AllowAgentForwarding yes" | sudo tee -a /etc/ssh/sshd_config 
+echo "AllowAgentForwarding yes" | sudo tee -a /etc/ssh/sshd_config
 
 mkdir -p ~/.ssh
 
@@ -55,4 +55,3 @@ chown vagrant:vagrant ~/.ssh/id_rsa
 chown vagrant:vagrant ~/.ssh/config
 chmod 600 ~/.ssh/id_rsa
 chmod 600 ~/.ssh/authorized_keys
-
